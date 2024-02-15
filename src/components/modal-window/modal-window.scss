@@ -1,0 +1,45 @@
+.modal-window {
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  width: 100vw;
+  height: 100vh;
+
+  background: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  
+  &.active {
+    display: flex;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    padding: 24px;
+    background: #fff;
+    box-shadow: 0 20px 24px -4px #10182814;
+  }
+
+  &__title {
+    margin-bottom: 24px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #222222;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 32px;
+  }
+
+  &__button {
+    width: 48%;
+    height: 44px;
+  }
+}
